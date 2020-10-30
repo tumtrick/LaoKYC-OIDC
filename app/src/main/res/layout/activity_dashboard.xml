@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlMainDashboardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/llMainDashboardProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlDashboardProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivCovidDashboardPhotoProfile"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_src_profile"
+                        app:civ_border_color="@color/txt"
+                        app:civ_border_width="1dp"
+                        app:civ_circle_background_color="@color/white"/>
+                    <ImageView
+                        android:id="@+id/ivbtnCovidEditProfileSetting"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_profile_settings"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvCovidDashboardPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/rounded_border_phone"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="1dp"
+                    android:paddingBottom="3dp"
+                    android:text="20xxxxxxxx"
+                    android:textColor="@color/txt"
+                    android:textSize="11sp" />
+
+
+                <!-- TODO -->
+                <!--<ImageView
+                    android:id="@+id/ivDashboardProfileVerified"
+                    android:layout_width="70dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/ic_profile_unverified"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"/>-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_main_menu_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/gradient_border_profile"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="7dp">
+
+
+                <TextView
+                    android:id="@+id/tvLabelCovidFirstName"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/notosanslaoregular"
+                    android:maxLines="1"
+                    android:paddingRight="30dp"
+                    android:text="ຊື່ ແລະ ນາມສະກຸນ"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tvCovidFirstNameAndSurName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_border_phone"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/notosanslaoregular"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="7dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimarySmart"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDashboardLogout"
+            style="@style/Font_family_regular"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/button_green_style"
+            android:text="ອອກຈາກລະບົບ"
+            android:fontFamily="@font/notosanslaoregular"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/llMainDashboardProfile"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

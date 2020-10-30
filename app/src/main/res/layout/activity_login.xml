@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLoginMain"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/mmoney_logo" />
+
+        <TextView
+            android:id="@+id/toolbar_main_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M Money Wallet"
+            android:textSize="21sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/futurabook"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/ivLoginMain"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+
+
+
+    </LinearLayout>
+
+    <com.gov.mpt.laokyclib.button.util.LaoKYCSignInButton
+        android:id="@+id/btnSignInWithLaoKYC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Sign in with LaoKYC"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:isDarkTheme="true" />
+</LinearLayout>
