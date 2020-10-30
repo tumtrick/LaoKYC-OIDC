@@ -18,9 +18,9 @@ public final class BuildConfigs {
   public static final String FLAVOR = "";
   // Fields from build type: debug
   public static final String AUTHORIZSTION_END_POINT_URI = "https://login.oneid.sbg.la/connect/authorize";
-  public static final String CLIENT_ID = "button1";
-  public static final String CLIENT_SECRET = "612d1aea-1c64-9507-e65a-92673ba54472";
-  public static final String REDIRECT_URI = "io.identityserver.button1://signin-oidc";
+  public static final String CLIENT_ID = "YOUR_CLIENT_ID";
+  public static final String CLIENT_SECRET = "YOUR_CLIENT_SECRET";
+  public static final String REDIRECT_URI = "io.identityserver.YOUR_CLIENT_ID://signin-oidc";
   public static final String REGISTRATION_END_POINT_URI = "";
   public static final String RESPONSE_TYPE = "code";
   public static final String SCOPE = "profile openid LaoKYC mkyc_api";

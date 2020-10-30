@@ -44,7 +44,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="io.identityserver.button1" />
+                <data android:scheme="io.identityserver.YOUR_CLIENT_ID" />
             </intent-filter>
         </activity>
     </application>
