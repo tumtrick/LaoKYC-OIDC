@@ -19,3 +19,17 @@ Request & Response https://gateway.sbg.la/api/
 ### 2.	Render Image ( https://gateway.sbg.la/api/render/MyPhoto/+ Phonenumber + "?") 
 
 
+### 3.	Edit file “ BuildConfigs” in package : “com.gov.mpt.laokyclib.utils”
+
+```kotlin
+public static final String AUTHORIZSTION_END_POINT_URI = "https://login.oneid.sbg.la/connect/authorize";
+public static final String CLIENT_ID = "---- Please enter your Client ID -----";
+public static final String CLIENT_SECRET = "--- Please enter your Client Secret ---";
+public static final String REDIRECT_URI = "io.identityserver.YOUR_CLIENT_ID://signin-oidc";
+public static final String REGISTRATION_END_POINT_URI = "";
+public static final String RESPONSE_TYPE = "code";
+public static final String SCOPE = "profile openid LaoKYC mkyc_api";
+public static final String TOKEN_END_POINT_URI = "https://login.oneid.sbg.la/connect/token";
+
+```
+
